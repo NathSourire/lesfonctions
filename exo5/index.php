@@ -1,5 +1,11 @@
 <?php
+$numb = 26;
+$Lastname = 'Leon';
 
+
+function exo5 ($numb,$Lastname){
+    return  ('Vous avez '.$numb. ' et vous appelez '.$Lastname);
+}
 ?>
 
 <!DOCTYPE html>
@@ -24,11 +30,11 @@
     </header>
     <main class="container- fluid">
     <div class="row">
+    <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-                <p>
-                    <?php
-                    echo ;
-                    ?>
+                <?php
+                echo exo5 ($numb,$Lastname);
+                ?>
                 </p>
             </div>
         </div>
