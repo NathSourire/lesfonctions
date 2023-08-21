@@ -2,8 +2,8 @@
 $chain1 = 'Nathalie';
 $chain2 = 'fait du PHP';
 
-function exo3($chain1, $chain2) {
-    return $chain1 .' '. $chain2;
+function exo3($string1, $string2) {
+    return $string1 .' '. $string2;
 }
 ?>
 
@@ -33,7 +33,8 @@ function exo3($chain1, $chain2) {
             <div class="results position-absolute top-50 start-50 translate-middle ">
                 <p>
                     <?php
-                    echo $chain1 .' '. $chain2;
+                    
+                    echo exo3($chain1,$chain2);
                     ?>
                 </p>
             </div>

@@ -1,16 +1,18 @@
 <?php
-$numb1 = 2;
-$numb2 = 5;
+$numb1 = rand(0,5);
+$numb2 = rand(0,5);
 function exo4($numb1, $numb2){
+    $message = '';
     if ($numb1 > $numb2){
-        return $numb1. ' est plus grand que ' .$numb2;
+        $message = $numb1. ' est plus grand que ' .$numb2;
     }   
-    elseif ($numb2 > $numb1){
-        return $numb1. ' est plus petit que ' .$numb2;  # code...
+    elseif ($numb1 < $numb2){
+        $message =  $numb1. ' est plus petit que ' .$numb2;  # code...
     }
     else {
-        return $numb1. ' est égale ' .$numb2;
+        $message =  $numb1. ' est égale ' .$numb2;
     }
+    return $message;
 }
 ?>
 

@@ -1,8 +1,8 @@
 <?php
-$chain = 'message retourner !';
-function exo2($chain)
+$chain = 'message retourné !';
+function exo2($string)
 {
-    return $chain;
+    return $string;
 }
 ?>
 
@@ -31,7 +31,8 @@ function exo2($chain)
             <div class="results position-absolute top-50 start-50 translate-middle ">
                 <p>
                     <?php
-                    echo $chain;
+                    echo exo2($chain);
+                    echo exo2(30)
                     ?>
                 </p>
             </div>

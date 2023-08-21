@@ -1,21 +1,22 @@
 <?php
-$age = 0;
-$gender = 'femme';
-$homme = 'true';
+$age = 17.5;
+$gender = 'homme';
 function exo7($age, $gender)
 {
+    $message= '';
     if ($age < 0 || $age > 100) {
-        return 'Entrez un age valide';
+        $message .= 'Entrez un age valide';
     } elseif ($age >= 18) {
-        return ' Vous êtes majeur ';
+        $message .= ' Vous êtes majeur ';
     } else {
-        return ' Vous êtes mineur '; # code...
+        $message .= ' Vous êtes mineur '; # code...
     }
-    if ($gender == $homme) {
-        return ' Vous êtes un homme ';
+    if ($gender == 'homme') {
+        $message .= ' Vous êtes un homme ';
     } else {
-        return ' Vous êtes une femme ';
+        $message .= ' Vous êtes une femme ';
     }
+    return $message;
 }
 ?>
 
@@ -49,7 +50,7 @@ function exo7($age, $gender)
     </header>
     <main class="container- fluid">
         <div class="row">
-            <div class="results position-absolute top-50 start-50 translate-middle ">
+            <div class="results ">
                 <?php
                 echo exo7($age, $gender);
                 ?>

@@ -1,7 +1,6 @@
 <?php
-$test = true;
-function exo1($test){
-    return $test;
+function boolean(){
+    return true;
 }
 ?>
 
@@ -30,7 +29,7 @@ function exo1($test){
             <div class="results position-absolute top-50 start-50 translate-middle ">
                 <p>
                     <?php
-                        echo $test;
+                        echo boolean();
                     ?>
                 </p>
             </div>

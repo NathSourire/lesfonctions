@@ -1,10 +1,5 @@
 <?php
-$numb1 = 7;
-$numb2 = 11;
-$numb3 = 16;
-
-
-function exo8 ($numb1,$numb2, $numb3){
+function exo8 ($numb1 = 1,$numb2 = 15, $numb3 = 2){
     return  ($numb1 + $numb2 + $numb3);
 }
 ?>
@@ -34,7 +29,7 @@ function exo8 ($numb1,$numb2, $numb3){
     <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
                 <?php
-                echo 'La somme est ' .exo8($numb1,$numb2, $numb3);
+                echo 'La somme est ' .exo8();
                 ?>
                 </p>
             </div>

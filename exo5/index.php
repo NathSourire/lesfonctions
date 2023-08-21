@@ -1,10 +1,10 @@
 <?php
-$numb = 26;
-$Lastname = 'Leon';
+$age = 26;
+$lastname = 'Leon';
 
 
-function exo5 ($numb,$Lastname){
-    return  ('Vous avez '.$numb. ' et vous appelez '.$Lastname);
+function exo5 ($numb,$lastname){
+    return  'Vous avez '.$numb. ' ans et vous appelez '.$lastname;
 }
 ?>
 
@@ -33,7 +33,7 @@ function exo5 ($numb,$Lastname){
     <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
                 <?php
-                echo exo5 ($numb,$Lastname);
+                echo exo5 ($age,$lastname);
                 ?>
                 </p>
             </div>
